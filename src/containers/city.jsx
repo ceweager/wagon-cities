@@ -21,7 +21,7 @@ class City extends Component {
   render() {
     let classes = "list-group-item";
     if (this.props.city === this.props.activeCity) {
-      classes += "selected";
+      classes += " selected";
     }
     return (
       <div onClick={this.handleClick} className={classes} >{this.props.city.name}</div>

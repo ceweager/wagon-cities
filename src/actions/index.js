@@ -2,16 +2,15 @@
 import cities from '../cities';
 
 export function setCities() {
-  console.log(cities);
   return {
-    type: 'SET_CITIES',
+    type: "SET_CITIES",
     payload: cities
   };
 }
 
 export function setActive(activeCity) {
   return {
-    type: 'SET_ACTIVE',
+    type: "SET_ACTIVE",
     payload: activeCity
   };
 }

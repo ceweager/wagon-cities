@@ -27,3 +27,13 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
+.city-image{
+  height: 60vh;
+  object-fit: cover;
+  width:70vw;
+}
+
+.selected{
+  border: 10px solid yellow;
+}

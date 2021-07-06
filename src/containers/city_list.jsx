@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { setCities } from '../actions';
-import { City } from './city';
+import City from './city';
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -18,7 +18,6 @@ class CityList extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       this.props.cities.map((city) => {
         return <City key={city.name} city={city} />;
